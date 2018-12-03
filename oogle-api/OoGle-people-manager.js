@@ -47,7 +47,7 @@ app.get('/:id', (req, res) => {
     var idList = [];
     dbArray.forEach(s => {
         if (s.SID == id) {
-            idList.push(e);
+            idList.push(id);
         }
     });
 
