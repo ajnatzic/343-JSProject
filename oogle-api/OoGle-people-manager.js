@@ -71,7 +71,7 @@ app.put('/:id', (req, res) => {
     var index = dbArray.length - 1;
     while (index >= 0) {
         if (dbArray[index].SID == id) {
-            dbArray.splice(i, 1);  // removes this portion of the array
+            dbArray.splice(index, 1);  // removes this portion of the array
         }
         index--;
     }
